@@ -1,0 +1,21 @@
+<form [formGroup]="searchUserForm" (ngSubmit)="onSearchUserFormSubmit()">
+  <div style="width: 100% ; height: 800px">
+    <div >
+      &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<mat-form-field style="width: 300px">
+        <input matInput placeholder="Source" formControlName="source">
+      </mat-form-field>
+
+      <mat-form-field style="width: 300px">
+        <input matInput placeholder="Destination" formControlName="destination">
+      </mat-form-field>
+      <mat-form-field style="width: 300px">
+        <input type="date"  matInput placeholder="(Depart Date)" formControlName="dateOfJourney">
+      </mat-form-field>
+    </div>
+<div style="height: 20px;" ></div>
+    <div class="search-form-submit-button">
+      <button mat-raised-button color="accent">Search Flight</button>
+    </div>
+  </div>
+</form>
+
